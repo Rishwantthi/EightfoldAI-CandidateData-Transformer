@@ -1,0 +1,50 @@
+CANDIDATE: John Doe (Also goes by Jonathan, full name is Jonathan Michael Doe)
+
+EMAIL ADDRESSES:
+- Work: john.doe@example.com (verified via company directory)
+- Personal: john@personal.com (from resume)
+
+PHONE:
+- Primary: 555-123-4567 (confirmed, prefers this)
+- Alternative: 555-987-6543 (listed on resume, older number)
+
+LOCATION:
+- Currently: San Francisco, CA / Bay Area
+- Willing to relocate: No, prefers remote or SF-based
+
+CURRENT EMPLOYMENT:
+- Company: Google (confirmed via LinkedIn, started 2020)
+- Title: Senior Software Engineer (sometimes listed as "Senior Engineer" or "Staff Engineer" in different systems)
+- Years of experience: 8+ years total (8 years mentioned in most sources)
+
+PREVIOUS EMPLOYERS:
+- Uber (2018-2020)
+- Various startups before that
+
+SKILLS & EXPERTISE:
+- Strong in Python (definitely, mentioned in all sources)
+- JavaScript/React (confirmed in resume and ATS)
+- Cloud: AWS, Docker, Kubernetes (resume shows AWS, ATS mentions Docker)
+- Database: PostgreSQL, MySQL, MongoDB (resume only)
+- DevOps, CI/CD (resume mentions)
+
+EDUCATION:
+- UC Berkeley, BS Computer Science, 2016
+- AWS Certification mentioned in resume
+
+GITHUB: github.com/johndoe (active)
+LINKEDIN: linkedin.com/in/johndoe (profile current)
+
+NOTES:
+- Very responsive, interested in opportunities
+- Can discuss in next 2-3 weeks
+- No visa sponsorship needed (US citizen)
+- Strong cultural fit for team
+- References available upon request
+
+CONFIDENCE LEVEL: HIGH
+Candidate seems genuine, all information cross-referenced across sources.
+Slight discrepancies in titles and dates are normal and expected.
+
+Last updated: 2026-06-29
+Recruiter: Sarah Johnson

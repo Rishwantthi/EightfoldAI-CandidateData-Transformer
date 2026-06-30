@@ -1,0 +1,12 @@
+{
+  "candidate_id": "cand_12345",
+  "full_name": "Jonathan Doe",
+  "primary_email": "john.doe@example.com",
+  "contact_phone": "(555) 123-4567",
+  "employer": "Google",
+  "job_title": "Senior Software Engineer",
+  "years_exp": 8,
+  "location": "San Francisco, CA",
+  "technical_skills": ["Python", "JavaScript", "React", "AWS", "Docker"],
+  "about": "Senior software engineer with experience in backend systems and cloud infrastructure."
+}
