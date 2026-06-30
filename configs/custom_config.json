@@ -1,15 +1,12 @@
 {
   "fields": [
     "full_name",
-    "email",
-    "phone",
-    "location",
-    "headline",
     "company",
-    "years_experience",
-    "skills"
+    "headline",
+    "skills",
+    "location"
   ],
-  "include_confidence": true,
-  "include_provenance": true,
-  "on_missing": "null"
+  "include_confidence": false,
+  "include_provenance": false,
+  "on_missing": "omit"
 }
