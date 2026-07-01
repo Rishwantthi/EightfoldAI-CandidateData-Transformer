@@ -56,6 +56,35 @@ class ProjectionLayer:
         projected = self._handle_missing(
             projected
         )
+        
+        # ----------------------------------------------------
+        # STEP 2.5 : Project nested skill objects
+        # ----------------------------------------------------
+
+        if "skills" in projected:
+
+            cleaned_skills = []
+
+            for skill in projected["skills"]:
+
+                # If skill is already a string, keep it
+                if not isinstance(skill, dict):
+                    cleaned_skills.append(skill)
+                    continue
+
+                item = {
+                    "name": skill.get("name")
+                }
+
+                if self.config.include_confidence:
+                    item["confidence"] = skill.get("confidence")
+
+                if self.config.include_provenance:
+                    item["sources"] = skill.get("sources", [])
+
+                cleaned_skills.append(item)
+
+            projected["skills"] = cleaned_skills
 
         # ----------------------------------------------------
         # STEP 3 : Confidence

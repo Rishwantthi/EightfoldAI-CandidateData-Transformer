@@ -229,16 +229,20 @@ class TransformerPipeline:
         # Return final output
         # =====================================================
         
-        return {
+        result = {
             "candidate_profile": validated_profile,
             "metadata": {
                 "identity_confidence": confidence,
                 "sources_used": source_names,
                 "source_count": len(source_names),
                 "identity_reasoning": identity_reason
-            },
-            "decision_log_internal": self.decision_log.to_dict_list() if self.decision_log else []
+            }
         }
+
+        if self.config.include_provenance:
+            result["decision_log_internal"] = self.decision_log.to_dict_list()
+
+        return result
     
     def get_decision_log(self):
         """Return internal decision log"""
@@ -304,6 +308,11 @@ if __name__ == "__main__":
         config_data = json.load(f)
 
     config = PipelineConfig(**config_data)
+    
+    print("\nCONFIG LOADED")
+    print(config.model_dump())
+    print()
+    
     # ========== RUN PIPELINE ==========
     print(config)
     pipeline = TransformerPipeline(config)
@@ -329,6 +338,7 @@ if __name__ == "__main__":
     if "candidate_profile" in result:
         print(f"Candidate Profile Fields: {list(result['candidate_profile'].keys())}")
         print(f"Sources Processed: {result['metadata']['sources_used']}")
-        print(f"Identity Confidence: {result['metadata']['identity_confidence']:.2f}")
+        if config.include_confidence:
+            print(f"Identity Confidence: {result['metadata']['identity_confidence']:.2f}")
     else:
         print(f"Error: {result.get('error')}")
